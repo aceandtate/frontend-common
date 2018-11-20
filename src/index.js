@@ -1,1 +1,5 @@
-export * as filters from './filters';
+const filters = require('./filters');
+
+module.exports = {
+  filters
+}

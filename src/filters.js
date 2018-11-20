@@ -1,26 +1,26 @@
-export const HTOS = {
+const HTOS = {
   ENABLED: 'yes',
   DISABLED: 'no',
 };
 
-export const TYPES = {
+const TYPES = {
   GLASSES: 'glasses',
   SUNGLASSES: 'sunglasses',
 };
 
-export const PRODUCT_TYPES = {
+const PRODUCT_TYPES = {
   FRAME: 'frame',
   CLIP_ON: 'clip_on',
   GIFTCARD: 'giftcard',
 };
 
-export const GENDERS = {
+const GENDERS = {
   MEN: 'male',
   WOMEN: 'female',
   UNISEX: 'unisex',
 };
 
-export const FILTER_KEYS = {
+const FILTER_KEYS = {
   HTO: 'hto',
   TYPE: 'type',
   PRODUCT_TYPE: 'product_type',
@@ -32,40 +32,40 @@ export const FILTER_KEYS = {
   PRICE: 'price',
 };
 
-export const MATERIALS = {
+const MATERIALS = {
   ACETATE: 'acetate',
   METAL: 'metal',
   COMBI: 'combi',
   TITANIUM: 'titanium',
 };
 
-export const SHAPES = {
+const SHAPES = {
   ROUND: 'round',
   SQUARE: 'square',
   RECTANGLE: 'rectangular',
 };
 
-export const WIDTHS = {
+const WIDTHS = {
   NARROW: 'narrow',
   MEDIUM: 'medium',
   WIDE: 'wide',
 };
 
-export const COLORS = {
+const COLORS = {
   COLORED: 'colored',
   LIGHT: 'light',
   DARK: 'dark',
   TRANSPARENT: 'transparent',
 };
 
-export const PRICES = {
+const PRICES = {
   BASE: 'base',
   PREMIUM: 'premium',
 };
 
 // master of allowed filters and their translations
 // When adding new values ensure to also add the translation messages with the same keys
-export const filterOptions = {
+const filterOptions = {
   [FILTER_KEYS.MATERIAL]: Object.values(MATERIALS),
   [FILTER_KEYS.SHAPE]: Object.values(SHAPES),
   [FILTER_KEYS.WIDTH]: Object.values(WIDTHS),
@@ -73,7 +73,7 @@ export const filterOptions = {
   [FILTER_KEYS.PRICE]: Object.values(PRICES),
 };
 
-export const filterOptionsAdvanced = {
+const filterOptionsAdvanced = {
   [FILTER_KEYS.HTO]: Object.values(HTOS),
   [FILTER_KEYS.TYPE]: Object.values(TYPES),
   [FILTER_KEYS.PRODUCT_TYPE]: Object.values(PRODUCT_TYPES),
@@ -85,8 +85,24 @@ export const filterOptionsAdvanced = {
   [FILTER_KEYS.PRICE]: Object.values(PRICES),
 };
 
-export const allowedFilterTypes = Object.keys(filterOptions);
+const allowedFilterTypes = Object.keys(filterOptions);
 
-export function getAllowedFilterOptions(type) {
+function getAllowedFilterOptions(type) {
   return filterOptions[type] || [];
+}
+
+module.exports = {
+  HTOS,
+  TYPES,
+  PRODUCT_TYPES,
+  GENDERS,
+  FILTER_KEYS,
+  MATERIALS,
+  SHAPES,
+  WIDTHS,
+  COLORS,
+  PRICES,
+  filterOptions,
+  filterOptionsAdvanced,
+  allowedFilterTypes,
 }
