@@ -1,0 +1,7 @@
+{
+  "name": "frontend-common",
+  "version": "0.0.1",
+  "repository": "git@github.com:aceandtate/frontend-common.git",
+  "private": true,
+  "main": "src/index.js"
+}
