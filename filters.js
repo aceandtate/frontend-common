@@ -105,4 +105,5 @@ module.exports = {
   filterOptions,
   filterOptionsAdvanced,
   allowedFilterTypes,
+  getAllowedFilterOptions,
 }
