@@ -34,6 +34,7 @@ const FILTER_KEYS = {
 
 const MATERIALS = {
   ACETATE: 'acetate',
+  BIO_ACETATE: 'bio_acetate',
   METAL: 'metal',
   COMBI: 'combi',
   TITANIUM: 'titanium',
