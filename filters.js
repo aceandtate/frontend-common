@@ -12,7 +12,7 @@ const PRODUCT_TYPES = {
   FRAME: 'frame',
   CLIP_ON: 'clip_on',
   GIFTCARD: 'giftcard',
-  ACCESSORIES: 'accessories',
+  ACCESSORY: 'accessory',
 };
 
 const GENDERS = {
