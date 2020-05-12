@@ -29,6 +29,8 @@ const FILTER_KEYS = {
   MATERIAL: 'material',
   SHAPE: 'shape',
   WIDTH: 'width',
+  CONTAINS_COLORS: 'contains_colors',
+  COLOR_PATTERN: 'color_pattern',
   COLOR: 'color',
   PRICE: 'price',
 };
@@ -42,6 +44,8 @@ const MATERIALS = {
 };
 
 const SHAPES = {
+  HEXAGONAL: 'hexagonal',
+  OVAL: 'oval',
   ROUND: 'round',
   SQUARE: 'square',
   RECTANGLE: 'rectangular',
@@ -65,6 +69,34 @@ const PRICES = {
   PREMIUM: 'premium',
 };
 
+const CONTAINS_COLORS = {
+  BEIGE: 'beige',
+  BLACK: 'black',
+  BLUE: 'blue',
+  BROWN: 'brown',
+  CLEAR: 'clear',
+  GOLD: 'gold',
+  GREEN: 'green',
+  GREY: 'grey',
+  HAVANA: 'havana',
+  MULTICOLOR: 'multicolor',
+  ORANGE: 'orange',
+  PINK: 'pink',
+  PURPLE: 'purple',
+  RED: 'red',
+  SILVER: 'silver',
+  TORTOISE: 'tortoise',
+  WHITE: 'white',
+  YELLOW: 'yellow',
+};
+
+const COLOR_PATTERN = {
+  PATTERN: 'pattern',
+  GRADIENT: 'gradient',
+  SOLID: 'solid',
+  TRANSPARENT: 'transparent',
+};
+
 // master of allowed filters and their translations
 // When adding new values ensure to also add the translation messages with the same keys
 const filterOptions = {
@@ -84,6 +116,8 @@ const filterOptionsAdvanced = {
   [FILTER_KEYS.SHAPE]: Object.values(SHAPES),
   [FILTER_KEYS.WIDTH]: Object.values(WIDTHS),
   [FILTER_KEYS.COLOR]: Object.values(COLORS),
+  [FILTER_KEYS.CONTAINS_COLORS]: Object.values(CONTAINS_COLORS),
+  [FILTER_KEYS.COLOR_PATTERN]: Object.values(COLOR_PATTERN),
   [FILTER_KEYS.PRICE]: Object.values(PRICES),
 };
 
@@ -103,6 +137,8 @@ module.exports = {
   SHAPES,
   WIDTHS,
   COLORS,
+  CONTAINS_COLORS,
+  COLOR_PATTERN,
   PRICES,
   filterOptions,
   filterOptionsAdvanced,
