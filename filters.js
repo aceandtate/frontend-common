@@ -52,7 +52,7 @@ const SHAPES = {
   RECTANGLE: 'rectangular',
 };
 
-export const STYLE = {
+const STYLE = {
   ANGULAR: 'angular',
   AVIATOR: 'aviator',
   BOLD: 'bold',
