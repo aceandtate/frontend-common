@@ -28,6 +28,7 @@ const FILTER_KEYS = {
   GENDER: 'gender',
   MATERIAL: 'material',
   SHAPE: 'shape',
+  STYLE: 'style',
   WIDTH: 'width',
   CONTAINS_COLORS: 'contains_colors',
   COLOR_PATTERN: 'color_pattern',
@@ -49,6 +50,20 @@ const SHAPES = {
   ROUND: 'round',
   SQUARE: 'square',
   RECTANGLE: 'rectangular',
+};
+
+export const STYLE = {
+  ANGULAR: 'angular',
+  AVIATOR: 'aviator',
+  BOLD: 'bold',
+  CAT_EYE: 'cat_eye',
+  CLASSIC: 'classic',
+  CLUBMASTER: 'clubmaster',
+  FLAT_TOP: 'flat_top',
+  OVERSIZED: 'oversized',
+  RIMLESS: 'rimless',
+  SHIELD: 'shield',
+  WAYFARER: 'wayfarer',
 };
 
 const WIDTHS = {
@@ -92,7 +107,7 @@ const CONTAINS_COLORS = {
 
 const COLOR_PATTERN = {
   PATTERN: 'pattern',
-  GRADIENT: 'gradient',
+  GRADIENT: 'gradient_or_two_tone',
   SOLID: 'solid',
   TRANSPARENT: 'transparent',
 };
@@ -102,6 +117,7 @@ const COLOR_PATTERN = {
 const filterOptions = {
   [FILTER_KEYS.MATERIAL]: Object.values(MATERIALS),
   [FILTER_KEYS.SHAPE]: Object.values(SHAPES),
+  [FILTER_KEYS.STYLE]: Object.values(STYLE),
   [FILTER_KEYS.WIDTH]: Object.values(WIDTHS),
   [FILTER_KEYS.COLOR]: Object.values(COLORS),
   [FILTER_KEYS.PRICE]: Object.values(PRICES),
@@ -114,6 +130,7 @@ const filterOptionsAdvanced = {
   [FILTER_KEYS.GENDER]: Object.values(GENDERS),
   [FILTER_KEYS.MATERIAL]: Object.values(MATERIALS),
   [FILTER_KEYS.SHAPE]: Object.values(SHAPES),
+  [FILTER_KEYS.STYLE]: Object.values(STYLE),
   [FILTER_KEYS.WIDTH]: Object.values(WIDTHS),
   [FILTER_KEYS.COLOR]: Object.values(COLORS),
   [FILTER_KEYS.CONTAINS_COLORS]: Object.values(CONTAINS_COLORS),
@@ -135,6 +152,7 @@ module.exports = {
   FILTER_KEYS,
   MATERIALS,
   SHAPES,
+  STYLE,
   WIDTHS,
   COLORS,
   CONTAINS_COLORS,
