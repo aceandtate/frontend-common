@@ -27,7 +27,7 @@ const FILTER_KEYS = {
   PRODUCT_TYPE: 'product_type',
   GENDER: 'gender',
   MATERIAL: 'material',
-  SHAPE: 'shape',
+  SHAPE: 'shapes',
   STYLE: 'style',
   WIDTH: 'width',
   CONTAINS_COLORS: 'contains_colors',
