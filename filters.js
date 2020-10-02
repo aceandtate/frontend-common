@@ -42,6 +42,7 @@ const MATERIALS = {
   METAL: 'metal',
   COMBI: 'combi',
   TITANIUM: 'titanium',
+  RECYCLED: 'recycled'
 };
 
 const SHAPES = {
